@@ -6,16 +6,16 @@ ONLY USE THIS SCRIPT IF YOU PLAN ON ONLY CONNECTING TO THE TARGET HUB AND THE TA
 
 MANUALLY CONNECTING TO ANY OTHER HUB WITH THIS SCRIPT ACTIVE WILL CAUSE UNWANTED BRIDGING AND CAUSE BIG ISSUES!!!!!
 
-# Check Connection and Re-Connect Script
+## Check Connection and Re-Connect Script
 
 SSH into node and open bash shell or command line interface and type the following:
 
-# Hamvoip Step 1
+## Hamvoip Step 1
 cd /etc/asterisk/local
 
 sudo nano check_connect.sh
 
-# ASL3 Step 1
+## ASL3 Step 1
 cd /etc/asterisk
 
 sudo mkdir local
@@ -24,7 +24,7 @@ cd /etc/asterisk/local
 
 sudo nano check_connect.sh
 
-# Same for both Hamvoip AND ASL3 Step 2
+## Same for both Hamvoip AND ASL3 Step 2
 
 Paste the following text into the blank file you just created.
 
@@ -62,11 +62,11 @@ else
 
  --- Once done, press ctrl and x to close, Y to confirm and enter to save.
 
- # make script executable
+ ## make script executable
 
  sudo chmod +x check_connect.sh
 
- # This next step will run the script every 10 min. to check for connection
+ ## This next step will run the script every 10 min. to check for connection
 
  sudo crontab -e
 
